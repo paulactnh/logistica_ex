@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/entrega_cadastrar.js"defer></script>
+    <title>Entrega</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Home</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Cadastrar Entrega</h1>
+        <form>
+            <label for="destino">Destino:</label><br>
+            <input type="text" id="destino"><br><br>
+
+            <label for="status">Status:</label><br>
+            <select id="status">
+                <option value="TRANSITO">Trânsito</option>
+                <option value="ENTREGUE">Entregue</option>
+            </select><br><br>
+
+            <label for="data">Data e Hora:</label><br>
+            <input type="datetime" id="data"><br><br>
+
+            <label for="idCarga">Código da Carga:</label><br>
+            <input type="number" id="idCarga"><br><br>
+
+            <button id="btn_cad">Cadastrar</button>
+        </form>
+        <div id="res"></div>
+    </main>
+</body>
+</html>
